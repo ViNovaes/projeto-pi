@@ -3,6 +3,10 @@ import path from 'path'
 import mustache from 'mustache-express'
 import mainRoutes from './routes/index'
 
+import dotenv from 'dotenv'
+
+dotenv.config
+
 const server = express()
 
 server.set('view engine','mustache')
@@ -17,5 +21,4 @@ server.use((req,res) =>{
     res.status(404).send("Página não encontrada")
 })
 
-
-server.listen(3000)
+server.listen(process.env.PORT)
