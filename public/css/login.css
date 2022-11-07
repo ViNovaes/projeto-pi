@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* CSS reset */
 *, *:before, *:after { 
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 *{
     margin: 0;
@@ -14,113 +14,160 @@
 }
 /* CSS reset */
 
+/*Cabeçalho do Site*/
 body{
     height: 100vh;
     width: 100%;
-    background-repeat: repeat;
-    background: #00B4DB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #fffdf7;
 }
-
-.center{
+header{
     display: flex;
     justify-content: center;
-    margin-top: 15vh;
-}
-.container{
-    position: absolute;
-    background: #495057;
-    width: 450px;
-    padding: 30px;
-    box-shadow: 0px 0px 50px 35px rgba(0,0,0,0.1);
-}
-.container{
-    border-radius: 10px;
-}
-.container .text{
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    color: #f8f9fa;
-}
-.container form{
-    margin-top: -5px;
-}
-.container form .data{
-    height: 45px;
-    width: 100%;
-    margin: 30px 0;
-}
-form .data label{
-    font-size: 15px;
-    color: #f8f9fa;
-}
-form .data input{
-    height: 100%;
-    width: 100%;
-    padding-left: 10px;
-    font-size: 20px;
-    border:  1px solid silver;
-}
-form .data input:focus{
-    border-color: #0083B0;
-    border-bottom-width: 2px;
-}
-form .forgot-pass{
-    margin-top: 10px;
-}
-form .forgot-pass a{
-    color: #fff;
-    text-decoration: none;
-}
-form .forgot-pass a:hover{
-    color: #0083B0;
-    text-decoration: underline #fff;
+
 }
 
-/*css botão Acessar*/
+.Container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+}
+.logo img{
+    width: 360px;
+    padding-left: 70px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    padding-right: 70px;
+    font-size: 20px;
+}
+nav ul, nav li{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    padding: 10px;
+}
+nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a :hover{
+    text-shadow: 0px 0px 14px #b9b9b9;
+    text-decoration: underline 2px #2b2d42;
+    transition-duration: 200ms;
+    transition-delay: 10ms;
+}
+/*---------------------------------------*/
+/*conteudo de login */
+.geral{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.container1{
+    background-color: #7ea2f1a8;
+    width: 400px;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+    color: #fffdf7;
+    border-top: #2b2d42 solid 0.40vh;
+    border-left:#2b2d42 solid 0.40vh;
+    border-bottom: #2b2d42 solid 0.70vh;
+}
+.container1 .texto1{
+    margin-top: 100px;
+}
+.container1 h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.53);
+}
+.container1 h4{
+    display: grid;
+    text-align: center;
+    font-size: 0.9rem;
+}
 button{
     display: flex;
     justify-content: center;
-    background: #0083B0;
+    background: #fbc55f;
     font-family: inherit;
     padding: 0.6em 1.3em;
     font-weight: 900;
+    align-items: center;
     font-size: 1.2rem;
-    color: #fff;
-    border: 0.5vh solid black;
+    color: #000;
+    border: 0.2vh solid black;
     border-radius: 0.8vh;
     box-shadow: 0.1em 0.1em #000;
     cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 35%;
+    margin-top: 0px;
+    margin-left: 28%;
+    height: 40px;
 }
 button:hover {
     transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.18em 0.18em #000;
+    box-shadow: 0.12em 0.12em #000;
 }
 button:active {
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.05em 0.05em #000;
 }
-#acessar a{
-    color: #f8f9fa;
+#criar a{
+    color: #000;
     text-decoration: none;
 }
-
+#entrar a{
+    color: #000;
+    text-decoration: none;
+}
 /*css botão Acessar*/
-
-.singup-link{
-    text-align: center;
-    color: #f8f9fa;
+.container2{
+    background-color: #fffdf7;
+    border-radius: 0px 10px 10px 0px;
+    width: 360px;
+    display: grid;
+    justify-content: center;
+    border-top: #2b2d42 solid 0.40vh;
+    border-right:#2b2d42 solid 0.70vh;
+    border-bottom: #2b2d42 solid 0.70vh;
 }
-.singup-link a{
-    text-decoration: none;
-    color: #f8f9fa;
+.container2 .texto{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 1.9rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.33);
 }
-.singup-link a:hover{
-    color: #0083B0;
-    text-decoration: underline #fff;
+.container2 .data{
+    position: relative;
+    bottom: 50px;
+    display: grid;
+    margin-top: 20px;
+}
+.container2 .data input{
+    margin-top: 10px;
+    border-radius: 1vh;
+    font-size: 18px;
+    padding-left: 5px;
+    width: 90%;
+    height: 30px;
+    border: #cdd6dd solid 0.50vh;
+    border-bottom: #fbc55f solid 0.50vh;
+    border-right: #fbc55f solid 0.50vh;
+}
+input:focus{
+    outline: 0;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.33);
+}
+input::placeholder{
+    font-size: 15px;
+    color: #6c757d6b;
+    font-weight: 700;
 }

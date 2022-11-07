@@ -1,27 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* CSS reset */
 *, *:before, *:after { 
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 *{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #fffdf7;
 }
 /* CSS reset */
+/*Cabeçalho do Site*/
 header{
     display: flex;
     justify-content: center;
     height: 13vh;
-    background: #00B4DB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .Container{
@@ -31,13 +32,15 @@ header{
     width: 100%;
 }
 .logo img{
-    width: 350px;
+    width: 360px;
+    padding-left: 70px;
 }
 .menu{
     display: flex;
     align-items: center;
-    padding-right: 20px;
+    padding-right: 70px;
     font-size: 20px;
+    transition: ease .25s;
 }
 nav ul, nav li{
     list-style: none;
@@ -47,21 +50,21 @@ nav ul{
     padding: 10px;
 }
 nav a {
-    color: #f8f8f8;
+    color: #000000;
     text-decoration: none;
     padding: 10px;
 }
 nav a :hover{
-    text-shadow: 0px 0px 14px #e5e5e5;
+    text-shadow: 0px 0px 14px #b9b9b9;
+    text-decoration: underline 2px #2b2d42;
     transition-duration: 200ms;
-    transition-delay: 5ms;
+    transition-delay: 10ms;
 }
+/*---------------------------------------*/
 /*footer do codepen*/
 .footer-distributed {
-  margin-top: 542px;
-  background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 750px;
+  background: #1f1f1f; /* fallback for old browsers */
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -75,8 +78,7 @@ nav a :hover{
 }
 /* Footer links */
 .footer-distributed p.footer-links {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 15px;
   color: #f8f8f8;
   margin: 0 0 5px;
   padding: 0;
@@ -120,8 +122,8 @@ nav a :hover{
 .footer-distributed .footer-right a:hover{
     transform: scale(1.1); 
     -webkit-transform: scale(1.1);
-    background-color: #cccccc;
-    box-shadow: 0px 0px 25px -3px #e5e5e5;
+    background-color: #707070;
+    box-shadow: 0px 0px 8px -3px #e5e5e588;
     border-radius: 5px;
 }
 .footer-distributed p.footer-links a:hover{
@@ -130,4 +132,15 @@ nav a :hover{
   transition-delay: 5ms;
   text-decoration: underline;
 }
-/*footer do codepen*/
+/*---------------------------------------*/
+/*scrollbar*/
+body::-webkit-scrollbar {
+  width: 13px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #adb5bd;    
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: #e9ecef;     
+}
